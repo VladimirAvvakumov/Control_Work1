@@ -5,18 +5,18 @@
 
 
 
-// ввод массива строк с клавиатуры
+
 
 Console.WriteLine("Введите элементы массива, через пробел:");
 string input = Console.ReadLine();
 string[] array = input.Split(' ');
 
 
-string[] newArray = new string[array.Length]; // создание нового массива для хранения строк длиной <= 3 символам
+string[] newArray = new string[array.Length]; 
 int newIndex = 0;
 
 
-for (int i = 0; i < array.Length; i++) // перебор исходного массива и добавление нужных строк в новый массив
+for (int i = 0; i < array.Length; i++) 
 {
     if (array[i].Length <= 3)
     {
